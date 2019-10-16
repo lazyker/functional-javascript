@@ -1,5 +1,4 @@
 <script src="./lib/fx.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 
 <script>
   const products = [
@@ -88,13 +87,4 @@
     products,
     base_total_price(p => p.price >= 20000),
     log);
-</script>
-
-<script>
-  const mult2 = _.curry((a, b) => a * b);
-  log(mult2(3)(2));
-  const mult4 = mult2(3);
-  log(mult4(10));
-  log(mult4(5));
-  log(mult4(3));
 </script>
